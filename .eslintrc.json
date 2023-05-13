@@ -3,10 +3,10 @@
     "env": {
        "es6": true,
        "browser": true,
-       "jest": true,
-       "eol-last": ["error", "never"]
+       "jest": true
     },
     "rules": {
+      "eol-last": ["error", "never"]  
       "no-restricted-syntax": [
         "error",
         "LabeledStatement",
