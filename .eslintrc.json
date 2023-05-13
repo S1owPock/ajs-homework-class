@@ -6,7 +6,6 @@
        "jest": true
     },
     "rules": {
-      "eol-last": ["error", "never"]  
       "no-restricted-syntax": [
         "error",
         "LabeledStatement",
