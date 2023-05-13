@@ -3,7 +3,8 @@
     "env": {
        "es6": true,
        "browser": true,
-       "jest": true
+       "jest": true,
+       "eol-last": ["error", "never"]
     },
     "rules": {
       "no-restricted-syntax": [
