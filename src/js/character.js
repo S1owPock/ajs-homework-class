@@ -13,8 +13,6 @@ export default class Character {
       return this.type = type;
     } else {
       throw new Error('Нет такого героя');
-    }  
-    this.health = 100;
-    this.level = 1;
+    }
   }
 }
