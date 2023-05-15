@@ -7,10 +7,12 @@ export default class Character {
     } else {
       this.name = name;
     }
-    if (heroes.includes(type)) {
-      return this.type = type;
-    } else {
+    if (typeof type !== 'string') {
+      throw new Error('Ошибка, тип должнен быть строкой, а не числом или чем-то иным');
+    } else if (Bowman, Swordsman, Magician, Daemon, Undead, Zombie) {
       throw new Error('Нет такого героя')
+    } else {
+      this.type = type;
     }
     this.health = 100;
     this.level = 1;
