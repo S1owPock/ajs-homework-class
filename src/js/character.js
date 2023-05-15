@@ -1,3 +1,5 @@
+const heroes = ['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
+
 export default class Character {
   constructor(name, type) {
     if (typeof name !== 'string') {
@@ -7,13 +9,11 @@ export default class Character {
     } else {
       this.name = name;
     }
-    if (typeof type !== 'string') {
-      throw new Error('Ошибка, тип должнен быть строкой, а не числом или чем-то иным');
-    } else if (Bowman, Swordsman, Magician, Daemon, Undead, Zombie) {
-      throw new Error('Нет такого героя')
+    if (heroes.includes(type)) {
+      return type;
     } else {
-      this.type = type;
-    }
+      throw new Error('Нет такого героя')
+    }  
     this.health = 100;
     this.level = 1;
   }
