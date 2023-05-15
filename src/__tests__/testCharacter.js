@@ -14,7 +14,7 @@ test('testing Character', () => {
     level: 1,
     health: 100,
   };
-  expect(player).toEqual(plyaerToBe);
+  expect(player).toBe(plyaerToBe);
 });
 
 test('testing Character errors', () => {
@@ -42,7 +42,7 @@ test('testing Bowman', () => {
     attack: 25,
     defence: 25,
   };
-  expect(player).toEqual(testedPlayer);
+  expect(player).toBe(testedPlayer);
 });
 
 test('testing Swordsman', () => {
@@ -55,7 +55,7 @@ test('testing Swordsman', () => {
     attack: 40,
     defence: 10,
   };
-  expect(player).toEqual(testedPlayer);
+  expect(player).toBe(testedPlayer);
 });
 
 test('testing Magician', () => {
@@ -68,7 +68,7 @@ test('testing Magician', () => {
     attack: 10,
     defence: 40,
   };
-  expect(player).toEqual(testedPlayer);
+  expect(player).toBe(testedPlayer);
 });
 
 test('testing Undead', () => {
@@ -81,7 +81,7 @@ test('testing Undead', () => {
     attack: 25,
     defence: 25,
   };
-  expect(player).toEqual(testedPlayer);
+  expect(player).toBe(testedPlayer);
 });
 
 test('testing Zombie', () => {
@@ -94,7 +94,7 @@ test('testing Zombie', () => {
     attack: 40,
     defence: 10,
   };
-  expect(player).toEqual(testedPlayer);
+  expect(player).toBe(testedPlayer);
 });
 
 test('testing Daemon', () => {
@@ -107,5 +107,5 @@ test('testing Daemon', () => {
     attack: 10,
     defence: 40,
   };
-  expect(player).toEqual(testedPlayer);
+  expect(player).toBe(testedPlayer);
 });
