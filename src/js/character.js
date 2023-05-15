@@ -10,7 +10,7 @@ export default class Character {
       this.name = name;
     }
     if (heroes.includes(type)) {
-      return this.type = type;
+      this.type = type;
     } else {
       throw new Error('Нет такого героя');
     }
