@@ -7,14 +7,7 @@ import Zombie from '../js/Zombie';
 import Daemon from '../js/Daemon';
 
 test('testing Character', () => {
-  const player = new Character('Oleg');
-
-  const plyaerToBe = {
-    name: 'Oleg',
-    level: 1,
-    health: 100,
-  };
-  expect(player).toThrowError(plyaerToBe);
+  expect(() => new Character('Oleg')).toThrowError('Нет такого героя');
 });
 
 test('testing Character errors', () => {
