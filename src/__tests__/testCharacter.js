@@ -26,79 +26,25 @@ test('testing Character errors', () => {
 });
 
 test('testing Bowman', () => {
-  const player = new Bowman('Robin');
-  const testedPlayer = {
-    name: 'Robin',
-    type: 'Bowman',
-    level: 1,
-    health: 100,
-    attack: 25,
-    defence: 25,
-  };
-  expect(player).toThrowError(testedPlayer);
+  expect(() => new Bowman('Robin')).toThrowError('Нет такого героя');
 });
 
 test('testing Swordsman', () => {
-  const player = new Swordsman('Robin');
-  const testedPlayer = {
-    name: 'Robin',
-    type: 'Swordsman',
-    level: 1,
-    health: 100,
-    attack: 40,
-    defence: 10,
-  };
-  expect(player).toThrowError(testedPlayer);
+  expect(() => new Swordsman('Robin')).toThrowError('Нет такого героя');
 });
 
 test('testing Magician', () => {
-  const player = new Magician('Robin');
-  const testedPlayer = {
-    name: 'Robin',
-    type: 'Magician',
-    level: 1,
-    health: 100,
-    attack: 10,
-    defence: 40,
-  };
-  expect(player).toThrowError(testedPlayer);
+  expect(() => new Magician('Robin')).toThrowError('Нет такого героя');
 });
 
 test('testing Undead', () => {
-  const player = new Undead('Robin');
-  const testedPlayer = {
-    name: 'Robin',
-    type: 'Undead',
-    level: 1,
-    health: 100,
-    attack: 25,
-    defence: 25,
-  };
-  expect(player).toThrowError(testedPlayer);
+  expect(() => new Undead('Robin')).toThrowError('Нет такого героя');
 });
 
 test('testing Zombie', () => {
-  const player = new Zombie('Robin');
-  const testedPlayer = {
-    name: 'Robin',
-    type: 'Zombie',
-    level: 1,
-    health: 100,
-    attack: 40,
-    defence: 10,
-  };
-  expect(player).toThrowError(testedPlayer);
+  expect(() => new Zombie('Robin')).toThrowError('Нет такого героя');
 });
 
 test('testing Daemon', () => {
-  const player = new Daemon('Robin');
-  const testedPlayer = {
-    name: 'Robin',
-    type: 'Daemon',
-    level: 1,
-    health: 100,
-    attack: 10,
-    defence: 40,
-  };
-  expect(player).toThrowError(testedPlayer);
+  expect(() => new Daemon('Robin')).toThrowError('Нет такого героя');
 });
